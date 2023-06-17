@@ -4,7 +4,8 @@
   "description": "![Screenshot (13)](https://github.com/anshul1822/moving-car/assets/68806086/af307ff7-2a7c-493d-bff7-68366a792eb3)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
   },
   "author": "",
   "license": "ISC"
