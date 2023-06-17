@@ -71,15 +71,15 @@ body{
     .wheel.left img{
         height: 11vh;
         width: 5vw;
-        top: 14vh;
+        top: 13vh;
         left: 5vw;
     }
     
     .wheel.right img{
         height: 11vh;
         width: 5vw;
-        top: 14vh;
-        left: 26vw;        
+        top: 13vh;
+        left: 27vw;        
     }
   }
 
