@@ -1,0 +1,189 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body{
+    overflow: hidden;
+}
+
+.sky{
+    height : 75vh;
+    width : 100%;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.track{
+    height : 25vh;
+    width : 400%;
+    background-image: url(./track.png);
+    position: absolute;
+    top : 75vh;
+    animation: move linear 1s infinite;
+}
+
+.car{
+    background-image: url(./car_body.png.png);
+    background-size: cover;
+    height : 32%;
+    width : 38%;
+    background-repeat: no-repeat;
+    left : 10vw;
+    top : 65vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.wheel{
+
+    position: relative;
+}
+
+.wheel.left img{
+    position: absolute;
+    height: 11vh;
+    width: 6vw;
+    top : 13vh;
+    left : 5vw;
+    animation: wheelRotation linear .6s infinite;
+}
+
+.wheel.right img{
+    position: absolute;
+    height: 11vh;
+    width: 6vw;
+    top : 13vh;
+    left : 28vw;
+    animation: wheelRotation linear .6s infinite;
+}
+
+@media only screen and (max-width: 1900px) {
+    .car{
+        height: 37%;
+        width: 35%;
+    }
+
+    .wheel.left img{
+        height: 11vh;
+        width: 5vw;
+        top: 14vh;
+        left: 5vw;
+    }
+    
+    .wheel.right img{
+        height: 11vh;
+        width: 5vw;
+        top: 14vh;
+        left: 26vw;        
+    }
+  }
+
+@media only screen and (max-width: 1750px) {
+    .car{
+
+        height : 30%;
+        width : 35%;
+    }
+
+    .wheel.left img{
+        height: 12vh;
+        width: 5vw;
+        top: 12vh;
+        left: 5vw;
+    }
+    
+    .wheel.right img{
+        height: 12vh;
+        width: 5vw;
+        top: 12vh;
+        left: 26vw;
+    }
+  }
+
+@media only screen and (max-width: 1640px) {
+    .car{
+        height : 27%;
+        width : 33%;
+    }
+
+    .wheel.left img{
+        left: 4vw;
+        top: 12vh;
+        height: 11vh;
+        width: 5vw;
+    }
+    
+    .wheel.right img{
+        left: 24vw;
+        top: 12vh;
+        height: 11vh;
+        width: 5vw;
+        
+    }
+  }  
+
+
+  @media only screen and (max-width: 1440px) {
+    .car{
+        height : 25%;
+        width : 30%;
+    }
+
+    .wheel.left img{
+        height : 10vh;
+        width : 5vw;
+        left: 4vw;
+        top: 9vh;
+    }
+    
+    .wheel.right img{
+
+        height : 10vh;
+        width : 5vw;
+        left: 22vw;
+        top: 9vh;
+        
+    }
+  }    
+
+  @media only screen and (max-width: 1250px) {
+    .car{
+        height : 15%;
+        width : 25%;
+    }
+
+    .wheel.left img{
+        height: 6vh;
+        width: 4vw;
+        left: 3vw;
+        top: 6vh;
+    }
+    
+    .wheel.right img{
+        height: 6vh;
+        width: 4vw;
+        left: 18.5vw;
+        top: 6vh;
+        
+    }
+  }      
+
+
+@keyframes wheelRotation {
+     100%{
+        transform: rotate(360deg);
+     } 
+}
+
+@keyframes move {
+
+    100%{
+        transform: translateX(-200rem);
+    }
+}
+  
