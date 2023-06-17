@@ -58,7 +58,7 @@ body{
     height: 11vh;
     width: 6vw;
     top : 13vh;
-    left : 28vw;
+    left : 27.5vw;
     animation: wheelRotation linear .6s infinite;
 }
 
